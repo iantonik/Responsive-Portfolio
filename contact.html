@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Iwona's Portfolio</title>
+    <!-- forces recognition of device screen width. initial-scale is set to 100%, maximum-scale prevents user from zooming in on phone-->
+    <meta name="viewport" content="width-device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header-layout">
+        <div class="header-size">
+            <div class="logo">Iwona Antonik</div>
+            <div class="header-right">
+                <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+    </header>
+
+    <section>
+        <div class=content-title>
+            <h1>Contact</h1>
+        </div>
+        <form action="https://formspree.io/iwona.antonik@gmail.com" method="POST">
+            <label>Name</label><br>
+            <input class="input-fields" type="text" name="name" onfocus="if(this.value == 'John Smith') { this.value = ''; }"
+                value="John Smith"><br>
+            <label>E-mail</label><br>
+            <input class="input-fields" type="email" name="emailaddress" onfocus="if(this.value == 'example@gmail.com') { this.value = ''; }"
+                value="example@gmail.com"><br>
+            <label>Message</label><br>
+            <textarea type="text" name="message"></textarea>
+            <br><br>
+            <input class="submit-button" type="submit" value="Send">
+        </form>
+
+    </section>
+
+
+    <footer>
+        <p class="copyright">Copyright &copy;</p>
+    </footer>
+
+
+</body>
+
+</html>
