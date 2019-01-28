@@ -1,19 +1,17 @@
 /*prevent adjustment of font size after orientation chagen on phone or IE*/
 html {-webkin-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*apply natural box layout model to all elements - margin is added to outside of the box, padding is added to inside of the box*/
-/**{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}*/
+*{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
 
 
-
+/*Header Section*/
 .header-layout{
-    
     border-bottom: 2px solid #cccccc; 
     background-color: #ffffff;
     width: 100%;
     top: 0px;
     left: 0px;
     z-index: 99;
-    
 }
 
 .header-size{
@@ -40,31 +38,51 @@ html {-webkin-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 a:not(:last-child) { 
     border-right:solid .5px #cccccc;
-    
 }
 
-
-
-
-
-.content-font{
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #777777;
-    line-height: 1.5;
-}
-
+/* Boday layout*/
 body{
     background-image: url("../images/dust_scratches.png");
 
 }
 
+.wrapper{
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    max-width: 960px;
+    min-height: 100%;
+    margin: 0px auto;
+    /*margin-top: 80px;*/
+    padding: 19px;
+    margin-bottom: -50px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    line-height: 1.5;
+    
+}
+
+.content-title{
+    border-bottom: 2px solid #cccccc; 
+    color:#4aaaa5;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+
+.footer, 
+.push{
+    height: 50px;
+}
+
+/*Footer layout*/
+
 footer{
+    position: absolute;
     border-top: 8px solid #4aaaa5;
     left: 0;
-    bottom: 0;
     width: 100%;
     height: 50px;
     background-color: #666666;
+  
+
 }
 
 .copyright{
@@ -75,6 +93,9 @@ footer{
     width: 100%;
 }
 
+
+
+/*Contact form layout*/
 .input-fields{
     width: -webkit-fill-available;
     height: 20px;
@@ -110,27 +131,28 @@ label{
 
 }
 
-.container{
-    position: relative;
-    float: left;
-    margin-right: 40px;
-    margin-top: 40px;
-}
+
+/*Portfolio layout*/
 
 .project-img{
+    position: relative;
+    text-align: center;
     width: 100%;
     height: auto;
 }
 
-.project-title{
+.project-image-title-container{
     position: absolute;
-    top: 60%;
+    top: 70%;
+    width: 100%;
+ 
+}
+
+.project-title-background{
     background-color: #4aaaa5;
     color: white;
     text-align: center;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    line-height: 3;
 }
 
 .group:after {
@@ -141,21 +163,11 @@ label{
     height: 60px;
   }
 
-.content-title{
-    border-bottom: 2px solid #cccccc; 
-    color:#4aaaa5;
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
-}
 
-section{
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
-    max-width: 920px;
-    margin: 0px auto;
-    /*margin-top: 80px;*/
-    padding: 19px;
 
-}
+
+
+
 
 
 @media screen and (max-width: 640px){
@@ -193,8 +205,13 @@ section{
         margin-top: 15px;
     }
     
-    section{
+    .wrapper{
         margin-top: 120px;
+    }
+    .container{
+        position: relative;
+        float: left;
+        margin-top: 40px;
     }
 
 
@@ -217,6 +234,7 @@ section{
 
     .header-layout{
         position: fixed;
+        padding: 0px 10px 0px 10px;
     }
 
     .logo{
@@ -235,9 +253,22 @@ section{
         margin-right: 15px;
     }
 
-    section{
+    .wrapper{
         margin-top: 80px;
     }
+
+    .container{
+        position: relative;
+        float: left;
+        margin-top: 40px;
+        padding-right: 20px;
+    }
+
+    .project-title-background{
+        margin-right: 20px;
+    }
+
+
     
         
     
@@ -276,13 +307,26 @@ section{
         margin-right: 15px;
     }
 
-    section{
+    .wrapper{
         margin-top: 80px;
     }
     
-    footer{
-        position: absolute;
+    .container{
+        position: relative;
+        float: left;
+        margin-top: 40px;
+        padding-right: 20px;
     }
+
+    .project-title-background{
+        margin-right: 20px;
+    }
+
+    footer{
+        position: fixed;
+        bottom: 0;
+    }
+
 
 }
 
