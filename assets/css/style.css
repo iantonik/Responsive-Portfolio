@@ -199,9 +199,7 @@ label{
     }
 
     .profile-image{
-        /*width: 100%;*/
         height: auto;
-        /*float: left;*/
         margin-top: 15px;
     }
     
@@ -274,7 +272,7 @@ label{
     
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 979px){
     .col-l-1 {width: 8.33%;}
     .col-l-2 {width: 16.66%;}
     .col-l-3 {width: 25%;}
@@ -327,8 +325,61 @@ label{
         bottom: 0;
     }
 
-
 }
 
+@media screen and (min-width: 980px){
+    .col-xl-1 {width: 8.33%;}
+    .col-xl-2 {width: 16.66%;}
+    .col-xl-3 {width: 25%;}
+    .col-xl-4 {width: 33.33%;}
+    .col-xl-5 {width: 41.66%;}
+    .col-xl-6 {width: 50%;}
+    .col-xl-7 {width: 58.33%;}
+    .col-xl-8 {width: 66.66%;}
+    .col-xl-9 {width: 75%;}
+    .col-xl-10 {width: 83.33%;}
+    .col-xl-11 {width: 91.66%;}
+    .col-xl-12 {width: 100%;}
+
+    .header-layout{
+        position: fixed;
+    }
+
+    .logo{
+        float: left;
+    }
+    .header-right{
+        float: right;
+        margin-top: 20px;
+    }
+    .profile-image{
+        /*width: 30%;*/
+        height: auto;
+        float: left;
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+
+    .wrapper{
+        margin-top: 80px;
+    }
     
+    .container{
+        position: relative;
+        float: left;
+        margin-top: 40px;
+        padding-right: 20px;
+    }
+
+    .project-title-background{
+        margin-right: 20px;
+    }
+
+    footer{
+        position: fixed;
+        bottom: 0;
+    }
+
+
+}
 
